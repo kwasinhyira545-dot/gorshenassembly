@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gorshen Assembly Chapel - Winning Souls, Building Faith, Transforming Lives Through Christ">
+    <meta name="keywords" content="church, chapel, faith, worship, sermons, gorshen, assembly">
+    <title>Gorshen Assembly Chapel - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: slideDown 0.6s ease-out;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            color: #e0e0e0;
+            font-style: italic;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .card p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+        
+        .donation-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 20px;
+            border-left: 5px solid #667eea;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        
+        .donation-box strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .phone-number {
+            color: #764ba2;
+            font-size: 1.3em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .instructions {
+            color: #888;
+            font-size: 0.95em;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.05em;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .btn:active {
+            transform: scale(0.98);
+        }
+        
+        footer {
+            text-align: center;
+            color: #e0e0e0;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        footer p {
+            font-size: 0.95em;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .tagline {
+                font-size: 1em;
+            }
+            
+            .card {
+                padding: 25px;
+            }
+            
+            .card h2 {
+                font-size: 1.5em;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⛪ Gorshen Assembly Chapel</h1>
+            <p class="tagline">Winning Souls, Building Faith, Transforming Lives Through Christ</p>
+        </header>
+
+        <div class="cards-container">
+            <!-- Welcome Card -->
+            <div class="card">
+                <h2>🙏 Welcome</h2>
+                <p>
+                    Welcome to Gorshen Assembly Chapel, a thriving community dedicated to spreading the gospel 
+                    and building a strong foundation of faith. We invite you to join us in worship, prayer, 
+                    and spiritual growth as we serve Christ together.
+                </p>
+                <p>
+                    Whether you're seeking spiritual guidance, fellowship, or simply want to connect with our 
+                    church family, we welcome you with open arms.
+                </p>
+            </div>
+
+            <!-- Donation Card -->
+            <div class="card">
+                <h2>💝 Support Our Ministry</h2>
+                <p>
+                    Your generous donations help us continue our mission of spreading God's word, serving 
+                    the community, and building a stronger church for future generations.
+                </p>
+                <div class="donation-box">
+                    <strong>📱 Mobile Money (GHS)</strong>
+                    <span class="phone-number">0553979000</span>
+                    <div class="instructions">
+                        Simply dial <strong>*170#</strong> or use your mobile money app to send your contribution.
+                    </div>
+                </div>
+                <p style="font-size: 0.9em; color: #999; margin-top: 15px;">
+                    All donations are used transparently for church operations and community outreach.
+                </p>
+            </div>
+
+            <!-- Live Preaching Card -->
+            <div class="card">
+                <h2>📺 Live Preaching</h2>
+                <p>
+                    Join us for inspiring sermons, worship sessions, and spiritual teachings streamed live. 
+                    Stay connected with our community wherever you are in the world.
+                </p>
+                <p>
+                    Watch our latest services, testimonies, and spiritual content to grow your faith.
+                </p>
+                <a class="btn" href="https://www.tiktok.com/@gorshenassemblychapel" target="_blank">
+                    ▶️ Watch Live on TikTok
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Gorshen Assembly Chapel. All rights reserved.</p>
+            <p style="font-size: 0.85em; margin-top: 10px; color: #c0c0c0;">Built with faith and dedication 🙏</p>
+        </footer>
+    </div>
+</body>
+</html>
